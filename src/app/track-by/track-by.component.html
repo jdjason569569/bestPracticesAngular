@@ -1,0 +1,4 @@
+<div class="container m-5">
+    <p>Cuando una matriz cambia, Angular vuelve a renderizar todo el árbol DOM. Pero si usa trackBy, Angular sabrá qué elemento ha cambiado y solo hará cambios DOM para ese elemento en particular.</p>
+    <li *ngFor="let item of items; trackBy: trackByFn">{{ item }}</li>
+</div>
